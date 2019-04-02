@@ -12,10 +12,16 @@ import java.util.concurrent.atomic.AtomicInteger;
 @RestController
 @RequestMapping("/api")
 public class RightHitCounter {
+
     private final AtomicInteger hitCounter = new AtomicInteger(0);
 
     @GetMapping("/right-hit")
     public int addHit() {
         return hitCounter.incrementAndGet();
+    }
+
+
+    public int getHitCounter() {
+        return hitCounter.intValue();
     }
 }

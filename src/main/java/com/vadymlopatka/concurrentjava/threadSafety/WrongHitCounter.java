@@ -16,5 +16,9 @@ public class WrongHitCounter {
     public int addHit() {
         return ++hitCounter;
     }
+
+    public int getHitCounter() {
+        return hitCounter;
+    }
 }
 
