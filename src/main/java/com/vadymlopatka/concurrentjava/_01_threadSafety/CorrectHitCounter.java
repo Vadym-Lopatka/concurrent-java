@@ -1,4 +1,4 @@
-package com.vadymlopatka.concurrentjava.threadSafety;
+package com.vadymlopatka.concurrentjava._01_threadSafety;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,11 +11,11 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 @RestController
 @RequestMapping("/api")
-public class RightHitCounter {
+public class CorrectHitCounter {
 
     private final AtomicInteger hitCounter = new AtomicInteger(0);
 
-    @GetMapping("/right-hit")
+    @GetMapping("/correct-hit")
     public int addHit() {
         return hitCounter.incrementAndGet();
     }

@@ -1,15 +1,15 @@
-package com.vadymlopatka.concurrentjava.threadSafety;
+package com.vadymlopatka.concurrentjava._01_threadSafety;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class RightHitCounterTest {
-    private RightHitCounter hitCounter;
+public class CorrectHitCounterTest {
+    private CorrectHitCounter hitCounter;
 
     @Before
     public void setUp() throws Exception {
-        hitCounter = new RightHitCounter();
+        hitCounter = new CorrectHitCounter();
     }
 
     @Test
